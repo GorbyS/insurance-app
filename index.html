@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/style.css" rel="stylesheet"/>
+    <title>Client Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Client Management App</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clients</a></li>
+                <li><a href="manual.html">Manual</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="new-person">
+            <h2>New Client</h2>
+            <form action="" class="user-form" id ="user-form">
+                <div class="input-box">
+                    <input data-required="true" data-max-length="20" data-min-length="2" type="text" class="user-input"
+                     id="full-name" placeholder="Fill in the full name" title="letters">
+                </div>
+                <div class="input-box">
+                    <input data-required="true" data-max-length="8" type="text" class="user-input" id="bday"
+                     placeholder="Fill in the birthdate" pattern="[0-9]+" title="numbers">
+                </div>
+                <div class="input-box">
+                    <input data-required="true"type="tel" class="user-input" id="phone" placeholder="Fill in a phone number">
+                </div>
+                <div class="input-box">
+                    <input data-required="true" data-max-length="20" type="email" class="user-input"
+                     id="email" placeholder="Fill in a email">
+                </div>
+                <button class="cta-button" id="confirm">Add</button>
+            </form>
+        </section>
+        <section id="insured-person">
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">&copy; 2024 Online pojištění by Pisos</a>
+    </footer>
+    <script defer src="scripts/Table.js"></script>
+    <script defer src="scripts/User.js"></script>
+    <script defer src="scripts/service.js"></script>
+</body>
+</html>
